@@ -140,7 +140,7 @@ class Agent:
             object_node.appendChild(node_bnd_box)
             image_e.appendChild(object_node)
 
-            file_name = self.xml_team + "/results.xml"
-            with open(file_name, 'w') as fp:
-                doc.writexml(fp, indent='\t', addindent='\t',
-                             newl='\n', encoding="utf-8")
+        file_name = self.xml_team + "/results.xml"
+        with open(file_name, 'w') as fp:
+            doc.writexml(fp, indent='\t', addindent='\t',
+                            newl='\n', encoding="utf-8")
